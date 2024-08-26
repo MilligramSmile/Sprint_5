@@ -11,7 +11,7 @@ locators = {
     "PERSONAL_ACCOUNT_BUTTON": (By.XPATH, '//nav/a'),
     "LOGOUT_BUTTON": (By.XPATH, '//li/button[text()="Выход"]'),
     "CONSTRUCTOR_BUTTON": (By.XPATH, '//header//li[1]/a'),
-    "STELLAR_BURGERS_LOGO": (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]'),
+    "STELLAR_BURGERS_LOGO": (By.XPATH, '//nav/div/a'),
 
     "BUN_SECTION": (By.XPATH, '//span[text()="Булки"]'),
     "SAUCE_SECTION": (By.XPATH, '//span[text()="Соусы"]'),
