@@ -1,7 +1,6 @@
 from locators import locators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 
 def test_logout(driver):
@@ -22,5 +21,5 @@ def test_logout(driver):
 
     logout_button = wait.until(EC.element_to_be_clickable(locators["LOGOUT_BUTTON"]))
     logout_button.click()
-    time.sleep(3)
+    wait.until(EC.element_to_be_clickable(locators["LOGIN_BUTTON"]))
     assert 'login' in driver.current_url
